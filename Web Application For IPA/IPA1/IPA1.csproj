@@ -1,0 +1,1577 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F7E64F79-FE18-4D75-B4DD-32915DF16A4D}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IPA1</RootNamespace>
+    <AssemblyName>IPA1</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ajax FileUpload Control In AspNet">
+      <HintPath>..\..\..\fileupload_toolkit\Ajax FileUpload Control In AspNet.dll</HintPath>
+    </Reference>
+    <Reference Include="AjaxControlToolkit, Version=4.1.40412.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\fileupload_toolkit\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>..\..\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="AdminLab\AdminProfile.aspx" />
+    <Content Include="AdminLab\ApproveNewUser.aspx" />
+    <Content Include="AdminLab\AssignTask.aspx" />
+    <Content Include="AdminLab\BloodBankDetail.aspx" />
+    <Content Include="AdminLab\BloodBankDetailForm.aspx" />
+    <Content Include="AdminLab\Dashboard1.aspx" />
+    <Content Include="AdminLab\DonationForm.aspx" />
+    <Content Include="AdminLab\EventDetail.aspx" />
+    <Content Include="AdminLab\EventForm.aspx" />
+    <Content Include="AdminLab\ForgotPassword.aspx" />
+    <Content Include="AdminLab\ForwardRequest.aspx" />
+    <Content Include="AdminLab\ForwardRequestDetail.aspx" />
+    <Content Include="AdminLab\HospitalDetail.aspx" />
+    <Content Include="AdminLab\HospitalDetailForm.aspx" />
+    <Content Include="AdminLab\Login.aspx" />
+    <Content Include="AdminLab\MultiViewDemo.aspx" />
+    <Content Include="AdminLab\NewsDetail.aspx" />
+    <Content Include="AdminLab\NewsForm.aspx" />
+    <Content Include="AdminLab\NewUserRegistration.aspx" />
+    <Content Include="AdminLab\PatientDetail.aspx" />
+    <Content Include="AdminLab\PatientRequestForm.aspx" />
+    <Content Include="AdminLab\PatientServiceDetail.aspx" />
+    <Content Include="AdminLab\PaymentDetail.aspx" />
+    <Content Include="AdminLab\PaymentForm.aspx" />
+    <Content Include="AdminLab\PCDetailForm.aspx" />
+    <Content Include="AdminLab\PharmaCompanyDetail.aspx" />
+    <Content Include="AdminLab\ReportEvent.aspx" />
+    <Content Include="AdminLab\ReportGetEventDetail.aspx" />
+    <Content Include="AdminLab\ReportGetUserDetail.aspx" />
+    <Content Include="AdminLab\ReportServicesofSPDetail.aspx" />
+    <Content Include="AdminLab\ReportServicesofSPFilter.aspx" />
+    <Content Include="AdminLab\Report_GetRequestDetail.aspx" />
+    <Content Include="AdminLab\Report_GetTaskDetail.aspx" />
+    <Content Include="AdminLab\Report_RegistrationFilter.aspx" />
+    <Content Include="AdminLab\Report_Request.aspx" />
+    <Content Include="AdminLab\Report_Task.aspx" />
+    <Content Include="AdminLab\ResetPassword.aspx" />
+    <Content Include="AdminLab\Search.aspx" />
+    <Content Include="AdminLab\UserMast.aspx" />
+    <Content Include="AdminLab\ViewDonation.aspx" />
+    <Content Include="AdminLab\ViewInquiry.aspx" />
+    <Content Include="AdminLab\ViewRequest.aspx" />
+    <Content Include="AdminLab\ViewTask.aspx" />
+    <Content Include="assets\bootstrap-colorpicker\css\colorpicker.css" />
+    <Content Include="assets\bootstrap-colorpicker\img\alpha.png" />
+    <Content Include="assets\bootstrap-colorpicker\img\hue.png" />
+    <Content Include="assets\bootstrap-colorpicker\img\saturation.png" />
+    <Content Include="assets\bootstrap-colorpicker\js\bootstrap-colorpicker.js" />
+    <Content Include="assets\bootstrap-datepicker\css\datepicker.css" />
+    <Content Include="assets\bootstrap-datepicker\js\bootstrap-datepicker.js" />
+    <Content Include="assets\bootstrap-daterangepicker\date.js" />
+    <Content Include="assets\bootstrap-daterangepicker\daterangepicker.css" />
+    <Content Include="assets\bootstrap-daterangepicker\daterangepicker.js" />
+    <Content Include="assets\bootstrap-inputmask\bootstrap-inputmask.min.js" />
+    <Content Include="assets\bootstrap-tag\css\bootstrap-tag.css" />
+    <Content Include="assets\bootstrap-tag\js\bootstrap-tag.js" />
+    <Content Include="assets\bootstrap-timepicker\compiled\timepicker.css" />
+    <Content Include="assets\bootstrap-timepicker\js\bootstrap-timepicker.js" />
+    <Content Include="assets\bootstrap-toggle-buttons\static\js\jquery.toggle.buttons.js" />
+    <Content Include="assets\bootstrap-toggle-buttons\static\stylesheets\bootstrap-toggle-buttons.css" />
+    <Content Include="assets\bootstrap-tree\bootstrap-tree\css\bootstrap-tree.css" />
+    <Content Include="assets\bootstrap-tree\bootstrap-tree\img\bstree-halflings.png" />
+    <Content Include="assets\bootstrap-tree\bootstrap-tree\js\bootstrap-tree.js" />
+    <Content Include="assets\bootstrap-tree\htmlexample.html" />
+    <Content Include="assets\bootstrap-tree\xmlexample.xml" />
+    <Content Include="assets\bootstrap-wizard\jquery.bootstrap.wizard.min.js" />
+    <Content Include="assets\bootstrap-wysihtml5\bootstrap-wysihtml5.css" />
+    <Content Include="assets\bootstrap-wysihtml5\bootstrap-wysihtml5.js" />
+    <Content Include="assets\bootstrap-wysihtml5\wysihtml5-0.3.0.js" />
+    <Content Include="assets\bootstrap\css\bootstrap-fileupload.css" />
+    <Content Include="assets\bootstrap\css\bootstrap-responsive.min.css" />
+    <Content Include="assets\bootstrap\css\bootstrap.min.css" />
+    <Content Include="assets\bootstrap\img\glyphicons-halflings-white.png" />
+    <Content Include="assets\bootstrap\img\glyphicons-halflings.png" />
+    <Content Include="assets\bootstrap\js\bootstrap-fileupload.js" />
+    <Content Include="assets\bootstrap\js\bootstrap.min.js" />
+    <Content Include="assets\breakpoints\breakpoints.js" />
+    <Content Include="assets\chosen-bootstrap\chosen\chosen-sprite.png" />
+    <Content Include="assets\chosen-bootstrap\chosen\chosen.css" />
+    <Content Include="assets\chosen-bootstrap\chosen\chosen.jquery.min.js" />
+    <Content Include="assets\ckeditor\ckeditor.js" />
+    <Content Include="assets\clockface\css\clockface.css" />
+    <Content Include="assets\clockface\js\clockface.js" />
+    <Content Include="assets\coming_soon\demo\css\fonts\opensans-condlight-webfont.html" />
+    <Content Include="assets\coming_soon\demo\css\style.css" />
+    <Content Include="assets\coming_soon\demo\img\0.png" />
+    <Content Include="assets\coming_soon\demo\img\1.png" />
+    <Content Include="assets\coming_soon\demo\img\2.png" />
+    <Content Include="assets\coming_soon\demo\img\3.png" />
+    <Content Include="assets\coming_soon\demo\img\4.png" />
+    <Content Include="assets\coming_soon\demo\img\5.png" />
+    <Content Include="assets\coming_soon\demo\img\6.png" />
+    <Content Include="assets\coming_soon\demo\img\7.png" />
+    <Content Include="assets\coming_soon\demo\img\8.png" />
+    <Content Include="assets\coming_soon\demo\img\9.png" />
+    <Content Include="assets\coming_soon\demo\img\backgrounds\bg-asfalt.png" />
+    <Content Include="assets\coming_soon\demo\img\backgrounds\bg-brick.png" />
+    <Content Include="assets\coming_soon\demo\img\backgrounds\bg-burried.png" />
+    <Content Include="assets\coming_soon\demo\img\backgrounds\bg-carbon.png" />
+    <Content Include="assets\coming_soon\demo\img\backgrounds\bg-cloth.png" />
+    <Content Include="assets\coming_soon\demo\img\backgrounds\bg-darkdenim3.png" />
+    <Content Include="assets\coming_soon\demo\img\backgrounds\bg-denim.png" />
+    <Content Include="assets\coming_soon\demo\img\backgrounds\bg-dirty.png" />
+    <Content Include="assets\coming_soon\demo\img\backgrounds\bg-dotted.png" />
+    <Content Include="assets\coming_soon\demo\img\backgrounds\bg-dvsup.png" />
+    <Content Include="assets\coming_soon\demo\img\backgrounds\bg-fabric.png" />
+    <Content Include="assets\coming_soon\demo\img\backgrounds\bg-hexabunp.png" />
+    <Content Include="assets\coming_soon\demo\img\backgrounds\bg-icongrpip.png" />
+    <Content Include="assets\coming_soon\demo\img\backgrounds\bg-illusion.png" />
+    <Content Include="assets\coming_soon\demo\img\backgrounds\bg-linen.png" />
+    <Content Include="assets\coming_soon\demo\img\backgrounds\bg-mamba.png" />
+    <Content Include="assets\coming_soon\demo\img\backgrounds\bg-matter.png" />
+    <Content Include="assets\coming_soon\demo\img\backgrounds\bg-metal.png" />
+    <Content Include="assets\coming_soon\demo\img\backgrounds\bg-nami.png" />
+    <Content Include="assets\coming_soon\demo\img\backgrounds\bg-navy.png" />
+    <Content Include="assets\coming_soon\demo\img\backgrounds\bg-noisy.png" />
+    <Content Include="assets\coming_soon\demo\img\backgrounds\bg-office.png" />
+    <Content Include="assets\coming_soon\demo\img\backgrounds\bg-outlets.png" />
+    <Content Include="assets\coming_soon\demo\img\backgrounds\bg-rebel.png" />
+    <Content Include="assets\coming_soon\demo\img\backgrounds\bg-skewed.png" />
+    <Content Include="assets\coming_soon\demo\img\backgrounds\bg-suit.png" />
+    <Content Include="assets\coming_soon\demo\img\backgrounds\bg-tasky.png" />
+    <Content Include="assets\coming_soon\demo\img\backgrounds\bg-tile.png" />
+    <Content Include="assets\coming_soon\demo\img\backgrounds\bg-tire.png" />
+    <Content Include="assets\coming_soon\demo\img\backgrounds\bg-tr24.png" />
+    <Content Include="assets\coming_soon\demo\img\backgrounds\bg-twill.png" />
+    <Content Include="assets\coming_soon\demo\img\backgrounds\bg-txture.png" />
+    <Content Include="assets\coming_soon\demo\img\backgrounds\bg-wall.png" />
+    <Content Include="assets\coming_soon\demo\img\circle-blue.png" />
+    <Content Include="assets\coming_soon\demo\img\circle-green.png" />
+    <Content Include="assets\coming_soon\demo\img\circle-orange.png" />
+    <Content Include="assets\coming_soon\demo\img\circle-red.png" />
+    <Content Include="assets\coming_soon\demo\img\circle.png" />
+    <Content Include="assets\coming_soon\demo\img\days.png" />
+    <Content Include="assets\coming_soon\demo\img\footer-face.png" />
+    <Content Include="assets\coming_soon\demo\img\footer-frame.png" />
+    <Content Include="assets\coming_soon\demo\img\footer-saw.png" />
+    <Content Include="assets\coming_soon\demo\img\hours.png" />
+    <Content Include="assets\coming_soon\demo\img\minutes.png" />
+    <Content Include="assets\coming_soon\demo\img\seconds.png" />
+    <Content Include="assets\coming_soon\demo\img\social\blogger.png" />
+    <Content Include="assets\coming_soon\demo\img\social\facebook.png" />
+    <Content Include="assets\coming_soon\demo\img\social\flickr.png" />
+    <Content Include="assets\coming_soon\demo\img\social\google-plus.png" />
+    <Content Include="assets\coming_soon\demo\img\social\linkedin.png" />
+    <Content Include="assets\coming_soon\demo\img\social\myspace.png" />
+    <Content Include="assets\coming_soon\demo\img\social\picasa.png" />
+    <Content Include="assets\coming_soon\demo\img\social\skype.png" />
+    <Content Include="assets\coming_soon\demo\img\social\stumbleupon.png" />
+    <Content Include="assets\coming_soon\demo\img\social\twitter.png" />
+    <Content Include="assets\coming_soon\demo\img\social\vimeo.png" />
+    <Content Include="assets\coming_soon\demo\img\social\yahoo.png" />
+    <Content Include="assets\coming_soon\demo\img\social\youtube.png" />
+    <Content Include="assets\coming_soon\demo\img\twitter.png" />
+    <Content Include="assets\coming_soon\demo\js\style.js" />
+    <Content Include="assets\data-tables\DT_bootstrap.css" />
+    <Content Include="assets\data-tables\DT_bootstrap.js" />
+    <Content Include="assets\data-tables\images\sort_asc.png" />
+    <Content Include="assets\data-tables\images\sort_asc_disabled.html" />
+    <Content Include="assets\data-tables\images\sort_both.png" />
+    <Content Include="assets\data-tables\images\sort_desc.png" />
+    <Content Include="assets\data-tables\images\sort_desc_disabled.html" />
+    <Content Include="assets\data-tables\jquery.dataTables.js" />
+    <Content Include="assets\dropzone\css\dropzone.css" />
+    <Content Include="assets\dropzone\dropzone.js" />
+    <Content Include="assets\dropzone\images\spritemap%402x.png" />
+    <Content Include="assets\dropzone\images\spritemap.png" />
+    <Content Include="assets\fancybox\source\blank.gif" />
+    <Content Include="assets\fancybox\source\fancybox_loading.gif" />
+    <Content Include="assets\fancybox\source\fancybox_overlay.png" />
+    <Content Include="assets\fancybox\source\fancybox_sprite.png" />
+    <Content Include="assets\fancybox\source\jquery.fancybox.css" />
+    <Content Include="assets\fancybox\source\jquery.fancybox.pack.js" />
+    <Content Include="assets\flot\jquery.flot.crosshair.js" />
+    <Content Include="assets\flot\jquery.flot.js" />
+    <Content Include="assets\flot\jquery.flot.pie.js" />
+    <Content Include="assets\flot\jquery.flot.resize.js" />
+    <Content Include="assets\flot\jquery.flot.stack.js" />
+    <Content Include="assets\font-awesome\css\font-awesome.css" />
+    <Content Include="assets\font-awesome\font\fontawesome-webfont.html" />
+    <Content Include="assets\fullcalendar\fullcalendar\bootstrap-fullcalendar.css" />
+    <Content Include="assets\fullcalendar\fullcalendar\fullcalendar.min.js" />
+    <Content Include="assets\gritter\css\jquery.gritter.css" />
+    <Content Include="assets\gritter\images\gritter.png" />
+    <Content Include="assets\gritter\images\ie-spacer.gif" />
+    <Content Include="assets\gritter\js\jquery.gritter.js" />
+    <Content Include="assets\jquery-file-upload\css\jquery.fileupload-ui.css" />
+    <Content Include="assets\jquery-file-upload\img\loading.gif" />
+    <Content Include="assets\jquery-file-upload\img\progressbar.gif" />
+    <Content Include="assets\jquery-file-upload\js\jquery.fileupload-fp.js" />
+    <Content Include="assets\jquery-file-upload\js\jquery.fileupload-ui.js" />
+    <Content Include="assets\jquery-file-upload\js\jquery.fileupload.js" />
+    <Content Include="assets\jquery-file-upload\js\jquery.iframe-transport.js" />
+    <Content Include="assets\jquery-file-upload\js\vendor\canvas-to-blob.min.js" />
+    <Content Include="assets\jquery-file-upload\js\vendor\jquery.ui.widget.js" />
+    <Content Include="assets\jquery-file-upload\js\vendor\load-image.min.js" />
+    <Content Include="assets\jquery-file-upload\js\vendor\tmpl.min.js" />
+    <Content Include="assets\jquery-knob\js\jquery.knob.js" />
+    <Content Include="assets\jquery-slimscroll\jquery-ui-1.9.2.custom.min.js" />
+    <Content Include="assets\jquery-slimscroll\jquery.slimscroll.min.js" />
+    <Content Include="assets\jquery-tags-input\jquery.tagsinput.css" />
+    <Content Include="assets\jquery-tags-input\jquery.tagsinput.min.js" />
+    <Content Include="assets\jquery-ui\images\animated-overlay.gif" />
+    <Content Include="assets\jquery-ui\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="assets\jquery-ui\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="assets\jquery-ui\images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="assets\jquery-ui\images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="assets\jquery-ui\images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="assets\jquery-ui\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="assets\jquery-ui\images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="assets\jquery-ui\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="assets\jquery-ui\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="assets\jquery-ui\images\ui-icons_222222_256x240.png" />
+    <Content Include="assets\jquery-ui\images\ui-icons_228ef1_256x240.png" />
+    <Content Include="assets\jquery-ui\images\ui-icons_888888_256x240.png" />
+    <Content Include="assets\jquery-ui\images\ui-icons_ef8c08_256x240.png" />
+    <Content Include="assets\jquery-ui\images\ui-icons_ffd27a_256x240.png" />
+    <Content Include="assets\jquery-ui\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="assets\jquery-ui\jquery-ui-1.10.1.custom.min.css" />
+    <Content Include="assets\jquery-ui\jquery-ui-1.10.1.custom.min.js" />
+    <Content Include="assets\jqvmap\jqvmap\data\jquery.vmap.sampledata.js" />
+    <Content Include="assets\jqvmap\jqvmap\jquery.vmap.js" />
+    <Content Include="assets\jqvmap\jqvmap\jqvmap.css" />
+    <Content Include="assets\jqvmap\jqvmap\maps\jquery.vmap.europe.js" />
+    <Content Include="assets\jqvmap\jqvmap\maps\jquery.vmap.germany.js" />
+    <Content Include="assets\jqvmap\jqvmap\maps\jquery.vmap.russia.js" />
+    <Content Include="assets\jqvmap\jqvmap\maps\jquery.vmap.usa.js" />
+    <Content Include="assets\jqvmap\jqvmap\maps\jquery.vmap.world.js" />
+    <Content Include="assets\jslider\css\jslider.blue.css" />
+    <Content Include="assets\jslider\css\jslider.css" />
+    <Content Include="assets\jslider\css\jslider.plastic.css" />
+    <Content Include="assets\jslider\css\jslider.round.css" />
+    <Content Include="assets\jslider\css\jslider.round.plastic.css" />
+    <Content Include="assets\jslider\img\jslider.blue.png" />
+    <Content Include="assets\jslider\img\jslider.plastic.png" />
+    <Content Include="assets\jslider\img\jslider.png" />
+    <Content Include="assets\jslider\img\jslider.round.plastic.png" />
+    <Content Include="assets\jslider\img\jslider.round.png" />
+    <Content Include="assets\jslider\js\draggable-0.1.js" />
+    <Content Include="assets\jslider\js\jquery.dependClass-0.1.js" />
+    <Content Include="assets\jslider\js\jquery.numberformatter-1.2.3.js" />
+    <Content Include="assets\jslider\js\jquery.slider.js" />
+    <Content Include="assets\jslider\js\jshashtable-2.1_src.js" />
+    <Content Include="assets\jslider\js\tmpl.js" />
+    <Content Include="assets\nestable\jquery.nestable.css" />
+    <Content Include="assets\nestable\jquery.nestable.js" />
+    <Content Include="assets\pre-loader\3D coffee cup.gif" />
+    <Content Include="assets\pre-loader\3D snake.gif" />
+    <Content Include="assets\pre-loader\Atom.gif" />
+    <Content Include="assets\pre-loader\Bouncing ball.gif" />
+    <Content Include="assets\pre-loader\Broken ring.gif" />
+    <Content Include="assets\pre-loader\Clock with hands.gif" />
+    <Content Include="assets\pre-loader\Drawing flower.gif" />
+    <Content Include="assets\pre-loader\Drink in glass.gif" />
+    <Content Include="assets\pre-loader\Fading squares.gif" />
+    <Content Include="assets\pre-loader\Fancy pants.gif" />
+    <Content Include="assets\pre-loader\Hourglass.gif" />
+    <Content Include="assets\pre-loader\Kaleidoscope.gif" />
+    <Content Include="assets\pre-loader\Linear star.gif" />
+    <Content Include="assets\pre-loader\Nuclear alert.gif" />
+    <Content Include="assets\pre-loader\Ovals in circle.gif" />
+    <Content Include="assets\pre-loader\Pie chart.gif" />
+    <Content Include="assets\pre-loader\preview.gif" />
+    <Content Include="assets\pre-loader\preview2.gif" />
+    <Content Include="assets\pre-loader\preview3.gif" />
+    <Content Include="assets\pre-loader\Radar.gif" />
+    <Content Include="assets\pre-loader\Rounded blocks.gif" />
+    <Content Include="assets\pre-loader\Rounded stripes.gif" />
+    <Content Include="assets\pre-loader\Search with arrow.gif" />
+    <Content Include="assets\pre-loader\Searching.gif" />
+    <Content Include="assets\pre-loader\Snake.gif" />
+    <Content Include="assets\pre-loader\Snakes chasing.gif" />
+    <Content Include="assets\pre-loader\Snow with rain.gif" />
+    <Content Include="assets\pre-loader\Spider web.gif" />
+    <Content Include="assets\pre-loader\Spinning line.gif" />
+    <Content Include="assets\pre-loader\Spinning spiral.gif" />
+    <Content Include="assets\pre-loader\Storm.gif" />
+    <Content Include="assets\pre-loader\Sun.gif" />
+    <Content Include="assets\pre-loader\Surrounded segments.gif" />
+    <Content Include="assets\pre-loader\Thin broken ring.gif" />
+    <Content Include="assets\pre-loader\Thin fading line.gif" />
+    <Content Include="assets\pre-loader\Tree on wind.gif" />
+    <Content Include="assets\pre-loader\Triangles indicator.gif" />
+    <Content Include="assets\pre-loader\Twirl.gif" />
+    <Content Include="assets\pre-loader\Velocity.gif" />
+    <Content Include="assets\pre-loader\Ventilator.gif" />
+    <Content Include="assets\pre-loader\Water ripples.gif" />
+    <Content Include="assets\pre-loader\Whirlpool.gif" />
+    <Content Include="assets\uniform\css\uniform.default.css" />
+    <Content Include="assets\uniform\images\bg-input-focus.png" />
+    <Content Include="assets\uniform\images\bg-input.png" />
+    <Content Include="assets\uniform\images\sprite.png" />
+    <Content Include="assets\uniform\jquery.uniform.min.js" />
+    <Content Include="bin\Ajax FileUpload Control In AspNet.dll" />
+    <Content Include="bin\AjaxControlToolkit.dll" />
+    <Content Include="bin\BusLib.dll" />
+    <Content Include="bin\BusLib.pdb" />
+    <Content Include="bin\DataLib.dll" />
+    <Content Include="bin\IPA1.dll" />
+    <Content Include="bin\IPA1.pdb" />
+    <Content Include="bin\itextsharp.dll" />
+    <Content Include="css\style.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="ErrorPage.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="IdProof\blood.jpg" />
+    <Content Include="IdProof\blood1.jpg" />
+    <Content Include="IdProof\Chirag.png" />
+    <Content Include="IdProof\diseasedoc1_1.png" />
+    <Content Include="IdProof\diseasedoc2_1.jpg" />
+    <Content Include="IdProof\doc.gif" />
+    <Content Include="IdProof\doc1.jpg" />
+    <Content Include="IdProof\election-card.jpg.gif" />
+    <Content Include="IdProof\election_card_001.jpg" />
+    <Content Include="IdProof\hoslicense3_1.jpg" />
+    <Content Include="IdProof\hosp.jpg" />
+    <Content Include="IdProof\hosp1.jpg" />
+    <Content Include="IdProof\hospital2.jpg" />
+    <Content Include="IdProof\idproofpatient2_1.jpg" />
+    <Content Include="IdProof\idproofpatient_1.jpg" />
+    <Content Include="IdProof\iproofhos_1.jpg" />
+    <Content Include="IdProof\iproofhos_2.jpg" />
+    <Content Include="IdProof\pharma.jpg" />
+    <Content Include="css\inbox.css" />
+    <Content Include="css\style_default.css" />
+    <Content Include="css\style_responsive.css" />
+    <Content Include="font\myriadprobold.html" />
+    <Content Include="font\myriadproit.html" />
+    <Content Include="font\myriadprolight.html" />
+    <Content Include="font\myriadproregular.html" />
+    <Content Include="IdProof\volF2.jpg" />
+    <Content Include="img\404.png" />
+    <Content Include="img\bg-default.jpg" />
+    <Content Include="img\bg-denim.png" />
+    <Content Include="img\bg-grey.jpg" />
+    <Content Include="img\body-bg.png" />
+    <Content Include="img\bread-crumb-bg.jpg" />
+    <Content Include="img\bread-crumb-divider.jpg" />
+    <Content Include="img\bread-crumb-last.jpg" />
+    <Content Include="img\bullet-arrow-up-down-icon.png" />
+    <Content Include="img\email\logo.png" />
+    <Content Include="img\email\share.png" />
+    <Content Include="img\icon_down_sort_arrow.png" />
+    <Content Include="img\icon_sort_down.gif" />
+    <Content Include="img\icon_up_sort_arrow.png" />
+    <Content Include="img\loading.gif" />
+    <Content Include="img\lock-avatar.jpg" />
+    <Content Include="img\login-btn.jpg" />
+    <Content Include="img\logo.png" />
+    <Content Include="img\overlay-icon.png" />
+    <Content Include="img\product.jpg" />
+    <Content Include="img\profile-pic.jpg" />
+    <Content Include="img\side-bar-list-bg.png" />
+    <Content Include="img\submenu_hover.png" />
+    <Content Include="img\top-bg.jpg" />
+    <Content Include="img\view_sort_ascending.png" />
+    <Content Include="img\view_sort_descending.png" />
+    <Content Include="js\demo.gmaps.js" />
+    <Content Include="js\gmaps.js" />
+    <Content Include="js\inbox.js" />
+    <Content Include="js\jquery-1.8.2.min.js" />
+    <Content Include="js\jquery-1.8.3.min.js" />
+    <Content Include="js\jquery.blockui.js" />
+    <Content Include="js\jquery.cookie.js" />
+    <Content Include="js\jquery.peity.min.js" />
+    <Content Include="js\jquery.pulsate.min.js" />
+    <Content Include="js\portlet-draggable.js" />
+    <Content Include="js\scripts.js" />
+    <Content Include="js\table-editable.js" />
+    <Content Include="js\ui-jqueryui.js" />
+    <Content Include="js\ui-nestable.js" />
+    <Content Include="js\ui-tree.js" />
+    <Content Include="ProfilePic\002.jpg" />
+    <Content Include="ProfilePic\Admin.jpg" />
+    <Content Include="ProfilePic\Admin1.jpg" />
+    <Content Include="ProfilePic\blood.jpg" />
+    <Content Include="ProfilePic\blood1.jpg" />
+    <Content Include="ProfilePic\blood2.jpg" />
+    <Content Include="ProfilePic\default.png" />
+    <Content Include="ProfilePic\default1.png" />
+    <Content Include="ProfilePic\doc1.jpg" />
+    <Content Include="ProfilePic\don.jpg" />
+    <Content Include="ProfilePic\donor1.jpg" />
+    <Content Include="ProfilePic\donor14.jpg" />
+    <Content Include="ProfilePic\donorF2.jpg" />
+    <Content Include="ProfilePic\donorF3.jpg" />
+    <Content Include="ProfilePic\gopi.JPG" />
+    <Content Include="ProfilePic\hospital.jpg" />
+    <Content Include="ProfilePic\hospital1.jpg" />
+    <Content Include="ProfilePic\hospital2.jpg" />
+    <Content Include="ProfilePic\pharma.jpg" />
+    <Content Include="ProfilePic\pharma1.jpg" />
+    <Content Include="ProfilePic\pharma2.jpg" />
+    <Content Include="ProfilePic\SuperAdmin.jpg" />
+    <Content Include="ProfilePic\superadmin1.jpg" />
+    <Content Include="ProfilePic\superadmin12.jpg" />
+    <Content Include="ProfilePic\superadmin2.jpg" />
+    <Content Include="ProfilePic\volF.jpg" />
+    <Content Include="ProfilePic\volF1.jpg" />
+    <Content Include="ProfilePic\volF2.jpg" />
+    <Content Include="ProfilePic\volM.jpg" />
+    <Content Include="ProfilePic\volM1.jpg" />
+    <Content Include="ProfilePic\volM2.jpg" />
+    <Content Include="Scripts\ASPSnippets_Pager.min.js" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="SuperAdmin\Profile.aspx" />
+    <Content Include="SuperAdmin\ReportEvent.aspx" />
+    <Content Include="SuperAdmin\ReportEventDetail.aspx" />
+    <Content Include="SuperAdmin\ReportRequest.aspx" />
+    <Content Include="SuperAdmin\ReportRequestDetail.aspx" />
+    <Content Include="SuperAdmin\ReportSP.aspx" />
+    <Content Include="SuperAdmin\ReportSPDetail.aspx" />
+    <Content Include="SuperAdmin\ReportTask.aspx" />
+    <Content Include="SuperAdmin\ReportTaskDetail.aspx" />
+    <Content Include="SuperAdmin\ReportUser.aspx" />
+    <Content Include="SuperAdmin\ReportUserDetail.aspx" />
+    <Content Include="User\BloodBankProfile.aspx" />
+    <Content Include="User\DonorProfile.aspx" />
+    <Content Include="User\Gallery.aspx" />
+    <Content Include="User\HospitalProfile.aspx" />
+    <Content Include="User\PCProfile.aspx" />
+    <Content Include="User\RequestFormUser.aspx" />
+    <Content Include="User\SearchAdmin.aspx" />
+    <Content Include="Visitor\Copy of GetInvolved.aspx" />
+    <Content Include="Visitor\ForgotPassword.aspx" />
+    <Content Include="Visitor\Gallery.aspx" />
+    <Content Include="Visitor\images\FilledStar.gif" />
+    <Content Include="Visitor\images\ico\icon_ipa.jpg" />
+    <Content Include="Visitor\images\slider\blood.jpg" />
+    <Content Include="Visitor\images\slider\Donate.jpg" />
+    <Content Include="Visitor\images\Star.gif" />
+    <Content Include="Visitor\images\WaitingStar.gif" />
+    <Content Include="Visitor\js\jquery.ui.totop.js" />
+    <Content Include="Visitor\ResetPassword.aspx" />
+    <Content Include="Visitor\SearchAdmin.aspx" />
+    <Content Include="Visitor\TermsandCondition.aspx" />
+    <Content Include="Visitor\VisitorErrorPage.aspx" />
+    <Content Include="VolunteerLab\Default.aspx" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="SuperAdmin\AdminDetail.aspx" />
+    <Content Include="SuperAdmin\AdminForm.aspx" />
+    <Content Include="SuperAdmin\AlbumMast.aspx" />
+    <Content Include="SuperAdmin\CityMast.aspx" />
+    <Content Include="SuperAdmin\css\bootstrap.min.css" />
+    <Content Include="SuperAdmin\css\style.css" />
+    <Content Include="SuperAdmin\css\style_default.css" />
+    <Content Include="SuperAdmin\Dashboard1.aspx" />
+    <Content Include="SuperAdmin\ImageMast.aspx" />
+    <Content Include="SuperAdmin\IpMast.aspx" />
+    <Content Include="SuperAdmin\SHMast.aspx" />
+    <Content Include="SuperAdmin\StateMast.aspx" />
+    <Content Include="SuperAdmin\SuperAdmin.Master" />
+    <Content Include="SuperAdmin\TermMast.aspx" />
+    <Content Include="User\About.aspx" />
+    <Content Include="User\Contact.aspx" />
+    <Content Include="User\Donate.aspx" />
+    <Content Include="User\ErrorInDonate.aspx" />
+    <Content Include="User\Events.aspx" />
+    <Content Include="User\GetInvolved.aspx" />
+    <Content Include="User\Home.aspx" />
+    <Content Include="User\ThanksForDonate.aspx" />
+    <Content Include="User\VBloodBankDetail.aspx" />
+    <Content Include="User\VBloodBankDetailForm.aspx" />
+    <Content Include="User\VHospitalDetail.aspx" />
+    <Content Include="User\VHospitalServiceDetailForm.aspx" />
+    <Content Include="User\VPCDetail.aspx" />
+    <Content Include="User\VPCDetailForm.aspx" />
+    <Content Include="Visitor\About.aspx" />
+    <Content Include="Visitor\Contact.aspx" />
+    <Content Include="Visitor\css\animate.min.css" />
+    <Content Include="Visitor\css\bootstrap.min.css" />
+    <Content Include="Visitor\css\font-awesome.css" />
+    <Content Include="Visitor\css\font-awesome.min.css" />
+    <Content Include="Visitor\css\loginstyle.css" />
+    <Content Include="Visitor\css\main.css" />
+    <Content Include="Visitor\css\owl.carousel.css" />
+    <Content Include="Visitor\css\owl.transitions.css" />
+    <Content Include="Visitor\css\prettyPhoto.css" />
+    <Content Include="Visitor\css\responsive.css" />
+    <Content Include="Visitor\demopage.aspx" />
+    <Content Include="Visitor\Donate.aspx" />
+    <Content Include="Visitor\Events.aspx" />
+    <Content Include="Visitor\fonts\fontawesome-webfont.svg" />
+    <Content Include="Visitor\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Visitor\GetInvolved.aspx" />
+    <Content Include="Visitor\Home.aspx" />
+    <Content Include="Visitor\images\animated-number\bg.jpg" />
+    <Content Include="Visitor\images\arrows.png" />
+    <Content Include="Visitor\images\arrowws.png" />
+    <Content Include="Visitor\images\Awards1.png" />
+    <Content Include="Visitor\images\Awards2.jpg" />
+    <Content Include="Visitor\images\Awards3.jpg" />
+    <Content Include="Visitor\images\bot_bg.png" />
+    <Content Include="Visitor\images\Donate.jpg" />
+    <Content Include="Visitor\images\Donate1.jpg" />
+    <Content Include="Visitor\images\Fundraising1.jpg" />
+    <Content Include="Visitor\images\Fundraising2.jpg" />
+    <Content Include="Visitor\images\Fundraising3.jpg" />
+    <Content Include="Visitor\images\Fundraising4.jpg" />
+    <Content Include="Visitor\images\Fundraising6.jpg" />
+    <Content Include="Visitor\images\Healthcare1.png" />
+    <Content Include="Visitor\images\Healthcare2.jpg" />
+    <Content Include="Visitor\images\Healthcare3.jpg" />
+    <Content Include="Visitor\images\logo2.jpg" />
+    <Content Include="Visitor\images\marker.png" />
+    <Content Include="Visitor\images\News.jpg" />
+    <Content Include="Visitor\images\News1.jpg" />
+    <Content Include="Visitor\images\slider\slide2.jpg" />
+    <Content Include="Visitor\images\Supports1.jpg" />
+    <Content Include="Visitor\images\Supports2.jpg" />
+    <Content Include="Visitor\images\Supports3.jpg" />
+    <Content Include="Visitor\images\testimonial\bg.jpg" />
+    <Content Include="Visitor\images\work-process\bg.jpg" />
+    <Content Include="Visitor\index.html" />
+    <Content Include="Visitor\js\bootstrap.min.js" />
+    <Content Include="Visitor\js\html5shiv.js" />
+    <Content Include="Visitor\js\jquery.inview.min.js" />
+    <Content Include="Visitor\js\jquery.isotope.min.js" />
+    <Content Include="Visitor\js\jquery.js" />
+    <Content Include="Visitor\js\jquery.mixitup.min.js" />
+    <Content Include="Visitor\js\jquery.prettyPhoto.js" />
+    <Content Include="Visitor\js\main.js" />
+    <Content Include="Visitor\js\mousescroll.js" />
+    <Content Include="Visitor\js\owl.carousel.min.js" />
+    <Content Include="Visitor\js\respond.min.js" />
+    <Content Include="Visitor\js\smoothscroll.js" />
+    <Content Include="Visitor\js\wow.min.js" />
+    <Content Include="Visitor\Login.aspx" />
+    <Content Include="Visitor\RegistrationForm.aspx" />
+    <Content Include="Visitor\RequestForm.aspx" />
+    <Content Include="Visitor\SearchServiceProvider.aspx" />
+    <Content Include="VolunteerLab\css\bootstrap.min.css" />
+    <Content Include="VolunteerLab\css\style.css" />
+    <Content Include="VolunteerLab\css\style_default.css" />
+    <Content Include="VolunteerLab\Dashboard.aspx" />
+    <Content Include="VolunteerLab\PatientRequestForm.aspx" />
+    <Content Include="VolunteerLab\Search.aspx" />
+    <Content Include="VolunteerLab\ViewTask.aspx" />
+    <Content Include="VolunteerLab\VolunteerProfile.aspx" />
+    <Content Include="VolunteerLab\WebForm1.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLab\AdminProfile.aspx.cs">
+      <DependentUpon>AdminProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminLab\AdminProfile.aspx.designer.cs">
+      <DependentUpon>AdminProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLab\ApproveNewUser.aspx.cs">
+      <DependentUpon>ApproveNewUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminLab\ApproveNewUser.aspx.designer.cs">
+      <DependentUpon>ApproveNewUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLab\AssignTask.aspx.cs">
+      <DependentUpon>AssignTask.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminLab\AssignTask.aspx.designer.cs">
+      <DependentUpon>AssignTask.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLab\BloodBankDetail.aspx.cs">
+      <DependentUpon>BloodBankDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminLab\BloodBankDetail.aspx.designer.cs">
+      <DependentUpon>BloodBankDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLab\BloodBankDetailForm.aspx.cs">
+      <DependentUpon>BloodBankDetailForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminLab\BloodBankDetailForm.aspx.designer.cs">
+      <DependentUpon>BloodBankDetailForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLab\Dashboard1.aspx.cs">
+      <DependentUpon>Dashboard1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminLab\Dashboard1.aspx.designer.cs">
+      <DependentUpon>Dashboard1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLab\DonationForm.aspx.cs">
+      <DependentUpon>DonationForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminLab\DonationForm.aspx.designer.cs">
+      <DependentUpon>DonationForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLab\EventDetail.aspx.cs">
+      <DependentUpon>EventDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminLab\EventDetail.aspx.designer.cs">
+      <DependentUpon>EventDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLab\EventForm.aspx.cs">
+      <DependentUpon>EventForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminLab\EventForm.aspx.designer.cs">
+      <DependentUpon>EventForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLab\ForgotPassword.aspx.cs">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminLab\ForgotPassword.aspx.designer.cs">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLab\ForwardRequest.aspx.cs">
+      <DependentUpon>ForwardRequest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminLab\ForwardRequest.aspx.designer.cs">
+      <DependentUpon>ForwardRequest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLab\ForwardRequestDetail.aspx.cs">
+      <DependentUpon>ForwardRequestDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminLab\ForwardRequestDetail.aspx.designer.cs">
+      <DependentUpon>ForwardRequestDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLab\Home.Master.cs">
+      <DependentUpon>Home.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminLab\Home.Master.designer.cs">
+      <DependentUpon>Home.Master</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLab\HospitalDetail.aspx.cs">
+      <DependentUpon>HospitalDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminLab\HospitalDetail.aspx.designer.cs">
+      <DependentUpon>HospitalDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLab\HospitalDetailForm.aspx.cs">
+      <DependentUpon>HospitalDetailForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminLab\HospitalDetailForm.aspx.designer.cs">
+      <DependentUpon>HospitalDetailForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLab\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminLab\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLab\MultiViewDemo.aspx.cs">
+      <DependentUpon>MultiViewDemo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminLab\MultiViewDemo.aspx.designer.cs">
+      <DependentUpon>MultiViewDemo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLab\NewsDetail.aspx.cs">
+      <DependentUpon>NewsDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminLab\NewsDetail.aspx.designer.cs">
+      <DependentUpon>NewsDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLab\NewsForm.aspx.cs">
+      <DependentUpon>NewsForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminLab\NewsForm.aspx.designer.cs">
+      <DependentUpon>NewsForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLab\NewUserRegistration.aspx.cs">
+      <DependentUpon>NewUserRegistration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminLab\NewUserRegistration.aspx.designer.cs">
+      <DependentUpon>NewUserRegistration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLab\PatientDetail.aspx.cs">
+      <DependentUpon>PatientDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminLab\PatientDetail.aspx.designer.cs">
+      <DependentUpon>PatientDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLab\PatientRequestForm.aspx.cs">
+      <DependentUpon>PatientRequestForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminLab\PatientRequestForm.aspx.designer.cs">
+      <DependentUpon>PatientRequestForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLab\PatientServiceDetail.aspx.cs">
+      <DependentUpon>PatientServiceDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminLab\PatientServiceDetail.aspx.designer.cs">
+      <DependentUpon>PatientServiceDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLab\PaymentDetail.aspx.cs">
+      <DependentUpon>PaymentDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminLab\PaymentDetail.aspx.designer.cs">
+      <DependentUpon>PaymentDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLab\PaymentForm.aspx.cs">
+      <DependentUpon>PaymentForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminLab\PaymentForm.aspx.designer.cs">
+      <DependentUpon>PaymentForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLab\PCDetailForm.aspx.cs">
+      <DependentUpon>PCDetailForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminLab\PCDetailForm.aspx.designer.cs">
+      <DependentUpon>PCDetailForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLab\PharmaCompanyDetail.aspx.cs">
+      <DependentUpon>PharmaCompanyDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminLab\PharmaCompanyDetail.aspx.designer.cs">
+      <DependentUpon>PharmaCompanyDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLab\ReportEvent.aspx.cs">
+      <DependentUpon>ReportEvent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminLab\ReportEvent.aspx.designer.cs">
+      <DependentUpon>ReportEvent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLab\ReportGetEventDetail.aspx.cs">
+      <DependentUpon>ReportGetEventDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminLab\ReportGetEventDetail.aspx.designer.cs">
+      <DependentUpon>ReportGetEventDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLab\ReportGetUserDetail.aspx.cs">
+      <DependentUpon>ReportGetUserDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminLab\ReportGetUserDetail.aspx.designer.cs">
+      <DependentUpon>ReportGetUserDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLab\ReportServicesofSPDetail.aspx.cs">
+      <DependentUpon>ReportServicesofSPDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminLab\ReportServicesofSPDetail.aspx.designer.cs">
+      <DependentUpon>ReportServicesofSPDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLab\ReportServicesofSPFilter.aspx.cs">
+      <DependentUpon>ReportServicesofSPFilter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminLab\ReportServicesofSPFilter.aspx.designer.cs">
+      <DependentUpon>ReportServicesofSPFilter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLab\Report_GetRequestDetail.aspx.cs">
+      <DependentUpon>Report_GetRequestDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminLab\Report_GetRequestDetail.aspx.designer.cs">
+      <DependentUpon>Report_GetRequestDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLab\Report_GetTaskDetail.aspx.cs">
+      <DependentUpon>Report_GetTaskDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminLab\Report_GetTaskDetail.aspx.designer.cs">
+      <DependentUpon>Report_GetTaskDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLab\Report_RegistrationFilter.aspx.cs">
+      <DependentUpon>Report_RegistrationFilter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminLab\Report_RegistrationFilter.aspx.designer.cs">
+      <DependentUpon>Report_RegistrationFilter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLab\Report_Request.aspx.cs">
+      <DependentUpon>Report_Request.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminLab\Report_Request.aspx.designer.cs">
+      <DependentUpon>Report_Request.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLab\Report_Task.aspx.cs">
+      <DependentUpon>Report_Task.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminLab\Report_Task.aspx.designer.cs">
+      <DependentUpon>Report_Task.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLab\ResetPassword.aspx.cs">
+      <DependentUpon>ResetPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminLab\ResetPassword.aspx.designer.cs">
+      <DependentUpon>ResetPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLab\Search.aspx.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminLab\Search.aspx.designer.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLab\UserMast.aspx.cs">
+      <DependentUpon>UserMast.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminLab\UserMast.aspx.designer.cs">
+      <DependentUpon>UserMast.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLab\ViewDonation.aspx.cs">
+      <DependentUpon>ViewDonation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminLab\ViewDonation.aspx.designer.cs">
+      <DependentUpon>ViewDonation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLab\ViewInquiry.aspx.cs">
+      <DependentUpon>ViewInquiry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminLab\ViewInquiry.aspx.designer.cs">
+      <DependentUpon>ViewInquiry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLab\ViewRequest.aspx.cs">
+      <DependentUpon>ViewRequest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminLab\ViewRequest.aspx.designer.cs">
+      <DependentUpon>ViewRequest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLab\ViewTask.aspx.cs">
+      <DependentUpon>ViewTask.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminLab\ViewTask.aspx.designer.cs">
+      <DependentUpon>ViewTask.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ErrorPage.aspx.cs">
+      <DependentUpon>ErrorPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ErrorPage.aspx.designer.cs">
+      <DependentUpon>ErrorPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SuperAdmin\Profile.aspx.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SuperAdmin\Profile.aspx.designer.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SuperAdmin\ReportEvent.aspx.cs">
+      <DependentUpon>ReportEvent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SuperAdmin\ReportEvent.aspx.designer.cs">
+      <DependentUpon>ReportEvent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SuperAdmin\ReportEventDetail.aspx.cs">
+      <DependentUpon>ReportEventDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SuperAdmin\ReportEventDetail.aspx.designer.cs">
+      <DependentUpon>ReportEventDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SuperAdmin\ReportRequest.aspx.cs">
+      <DependentUpon>ReportRequest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SuperAdmin\ReportRequest.aspx.designer.cs">
+      <DependentUpon>ReportRequest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SuperAdmin\ReportRequestDetail.aspx.cs">
+      <DependentUpon>ReportRequestDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SuperAdmin\ReportRequestDetail.aspx.designer.cs">
+      <DependentUpon>ReportRequestDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SuperAdmin\ReportSP.aspx.cs">
+      <DependentUpon>ReportSP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SuperAdmin\ReportSP.aspx.designer.cs">
+      <DependentUpon>ReportSP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SuperAdmin\ReportSPDetail.aspx.cs">
+      <DependentUpon>ReportSPDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SuperAdmin\ReportSPDetail.aspx.designer.cs">
+      <DependentUpon>ReportSPDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SuperAdmin\ReportTask.aspx.cs">
+      <DependentUpon>ReportTask.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SuperAdmin\ReportTask.aspx.designer.cs">
+      <DependentUpon>ReportTask.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SuperAdmin\ReportTaskDetail.aspx.cs">
+      <DependentUpon>ReportTaskDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SuperAdmin\ReportTaskDetail.aspx.designer.cs">
+      <DependentUpon>ReportTaskDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SuperAdmin\ReportUser.aspx.cs">
+      <DependentUpon>ReportUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SuperAdmin\ReportUser.aspx.designer.cs">
+      <DependentUpon>ReportUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SuperAdmin\ReportUserDetail.aspx.cs">
+      <DependentUpon>ReportUserDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SuperAdmin\ReportUserDetail.aspx.designer.cs">
+      <DependentUpon>ReportUserDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\BloodBankProfile.aspx.cs">
+      <DependentUpon>BloodBankProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\BloodBankProfile.aspx.designer.cs">
+      <DependentUpon>BloodBankProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\DonorProfile.aspx.cs">
+      <DependentUpon>DonorProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\DonorProfile.aspx.designer.cs">
+      <DependentUpon>DonorProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Gallery.aspx.cs">
+      <DependentUpon>Gallery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Gallery.aspx.designer.cs">
+      <DependentUpon>Gallery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\HospitalProfile.aspx.cs">
+      <DependentUpon>HospitalProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\HospitalProfile.aspx.designer.cs">
+      <DependentUpon>HospitalProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\PCProfile.aspx.cs">
+      <DependentUpon>PCProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\PCProfile.aspx.designer.cs">
+      <DependentUpon>PCProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\RequestFormUser.aspx.cs">
+      <DependentUpon>RequestFormUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\RequestFormUser.aspx.designer.cs">
+      <DependentUpon>RequestFormUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\SearchAdmin.aspx.cs">
+      <DependentUpon>SearchAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\SearchAdmin.aspx.designer.cs">
+      <DependentUpon>SearchAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Visitor\Copy of GetInvolved.aspx.cs">
+      <DependentUpon>Copy of GetInvolved.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Visitor\Copy of GetInvolved.aspx.designer.cs">
+      <DependentUpon>Copy of GetInvolved.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Visitor\ForgotPassword.aspx.cs">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Visitor\ForgotPassword.aspx.designer.cs">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Visitor\Gallery.aspx.cs">
+      <DependentUpon>Gallery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Visitor\Gallery.aspx.designer.cs">
+      <DependentUpon>Gallery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Visitor\ResetPassword.aspx.cs">
+      <DependentUpon>ResetPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Visitor\ResetPassword.aspx.designer.cs">
+      <DependentUpon>ResetPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Visitor\SearchAdmin.aspx.cs">
+      <DependentUpon>SearchAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Visitor\SearchAdmin.aspx.designer.cs">
+      <DependentUpon>SearchAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Visitor\TermsandCondition.aspx.cs">
+      <DependentUpon>TermsandCondition.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Visitor\TermsandCondition.aspx.designer.cs">
+      <DependentUpon>TermsandCondition.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Visitor\VisitorErrorPage.aspx.cs">
+      <DependentUpon>VisitorErrorPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Visitor\VisitorErrorPage.aspx.designer.cs">
+      <DependentUpon>VisitorErrorPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VolunteerLab\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VolunteerLab\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Lab\Home.Master.cs">
+      <DependentUpon>Home.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Lab\Home.Master.designer.cs">
+      <DependentUpon>Home.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SuperAdmin\AdminDetail.aspx.cs">
+      <DependentUpon>AdminDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SuperAdmin\AdminDetail.aspx.designer.cs">
+      <DependentUpon>AdminDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SuperAdmin\AdminForm.aspx.cs">
+      <DependentUpon>AdminForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SuperAdmin\AdminForm.aspx.designer.cs">
+      <DependentUpon>AdminForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SuperAdmin\AlbumMast.aspx.cs">
+      <DependentUpon>AlbumMast.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SuperAdmin\AlbumMast.aspx.designer.cs">
+      <DependentUpon>AlbumMast.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SuperAdmin\CityMast.aspx.cs">
+      <DependentUpon>CityMast.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SuperAdmin\CityMast.aspx.designer.cs">
+      <DependentUpon>CityMast.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SuperAdmin\Dashboard1.aspx.cs">
+      <DependentUpon>Dashboard1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SuperAdmin\Dashboard1.aspx.designer.cs">
+      <DependentUpon>Dashboard1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SuperAdmin\ImageMast.aspx.cs">
+      <DependentUpon>ImageMast.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SuperAdmin\ImageMast.aspx.designer.cs">
+      <DependentUpon>ImageMast.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SuperAdmin\IpMast.aspx.cs">
+      <DependentUpon>IpMast.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SuperAdmin\IpMast.aspx.designer.cs">
+      <DependentUpon>IpMast.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SuperAdmin\SHMast.aspx.cs">
+      <DependentUpon>SHMast.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SuperAdmin\SHMast.aspx.designer.cs">
+      <DependentUpon>SHMast.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SuperAdmin\StateMast.aspx.cs">
+      <DependentUpon>StateMast.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SuperAdmin\StateMast.aspx.designer.cs">
+      <DependentUpon>StateMast.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SuperAdmin\SuperAdmin.Master.cs">
+      <DependentUpon>SuperAdmin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SuperAdmin\SuperAdmin.Master.designer.cs">
+      <DependentUpon>SuperAdmin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SuperAdmin\TermMast.aspx.cs">
+      <DependentUpon>TermMast.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SuperAdmin\TermMast.aspx.designer.cs">
+      <DependentUpon>TermMast.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Donate.aspx.cs">
+      <DependentUpon>Donate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Donate.aspx.designer.cs">
+      <DependentUpon>Donate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\ErrorInDonate.aspx.cs">
+      <DependentUpon>ErrorInDonate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\ErrorInDonate.aspx.designer.cs">
+      <DependentUpon>ErrorInDonate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Events.aspx.cs">
+      <DependentUpon>Events.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Events.aspx.designer.cs">
+      <DependentUpon>Events.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\GetInvolved.aspx.cs">
+      <DependentUpon>GetInvolved.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\GetInvolved.aspx.designer.cs">
+      <DependentUpon>GetInvolved.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\ThanksForDonate.aspx.cs">
+      <DependentUpon>ThanksForDonate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\ThanksForDonate.aspx.designer.cs">
+      <DependentUpon>ThanksForDonate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\User.Master.cs">
+      <DependentUpon>User.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\User.Master.designer.cs">
+      <DependentUpon>User.Master</DependentUpon>
+    </Compile>
+    <Compile Include="User\VBloodBankDetail.aspx.cs">
+      <DependentUpon>VBloodBankDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\VBloodBankDetail.aspx.designer.cs">
+      <DependentUpon>VBloodBankDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\VBloodBankDetailForm.aspx.cs">
+      <DependentUpon>VBloodBankDetailForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\VBloodBankDetailForm.aspx.designer.cs">
+      <DependentUpon>VBloodBankDetailForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\VHospitalDetail.aspx.cs">
+      <DependentUpon>VHospitalDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\VHospitalDetail.aspx.designer.cs">
+      <DependentUpon>VHospitalDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\VHospitalServiceDetailForm.aspx.cs">
+      <DependentUpon>VHospitalServiceDetailForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\VHospitalServiceDetailForm.aspx.designer.cs">
+      <DependentUpon>VHospitalServiceDetailForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\VPCDetail.aspx.cs">
+      <DependentUpon>VPCDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\VPCDetail.aspx.designer.cs">
+      <DependentUpon>VPCDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\VPCDetailForm.aspx.cs">
+      <DependentUpon>VPCDetailForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\VPCDetailForm.aspx.designer.cs">
+      <DependentUpon>VPCDetailForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Visitor\About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Visitor\About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Visitor\Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Visitor\Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Visitor\demopage.aspx.cs">
+      <DependentUpon>demopage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Visitor\demopage.aspx.designer.cs">
+      <DependentUpon>demopage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Visitor\Donate.aspx.cs">
+      <DependentUpon>Donate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Visitor\Donate.aspx.designer.cs">
+      <DependentUpon>Donate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Visitor\Events.aspx.cs">
+      <DependentUpon>Events.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Visitor\Events.aspx.designer.cs">
+      <DependentUpon>Events.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Visitor\GetInvolved.aspx.cs">
+      <DependentUpon>GetInvolved.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Visitor\GetInvolved.aspx.designer.cs">
+      <DependentUpon>GetInvolved.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Visitor\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Visitor\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Visitor\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Visitor\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Visitor\RegistrationForm.aspx.cs">
+      <DependentUpon>RegistrationForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Visitor\RegistrationForm.aspx.designer.cs">
+      <DependentUpon>RegistrationForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Visitor\RequestForm.aspx.cs">
+      <DependentUpon>RequestForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Visitor\RequestForm.aspx.designer.cs">
+      <DependentUpon>RequestForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Visitor\SearchServiceProvider.aspx.cs">
+      <DependentUpon>SearchServiceProvider.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Visitor\SearchServiceProvider.aspx.designer.cs">
+      <DependentUpon>SearchServiceProvider.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Visitor\Visitor.Master.cs">
+      <DependentUpon>Visitor.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Visitor\Visitor.Master.designer.cs">
+      <DependentUpon>Visitor.Master</DependentUpon>
+    </Compile>
+    <Compile Include="VolunteerLab\Dashboard.aspx.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VolunteerLab\Dashboard.aspx.designer.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VolunteerLab\PatientRequestForm.aspx.cs">
+      <DependentUpon>PatientRequestForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VolunteerLab\PatientRequestForm.aspx.designer.cs">
+      <DependentUpon>PatientRequestForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VolunteerLab\Search.aspx.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VolunteerLab\Search.aspx.designer.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VolunteerLab\Volunteer.Master.cs">
+      <DependentUpon>Volunteer.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VolunteerLab\Volunteer.Master.designer.cs">
+      <DependentUpon>Volunteer.Master</DependentUpon>
+    </Compile>
+    <Compile Include="VolunteerLab\ViewTask.aspx.cs">
+      <DependentUpon>ViewTask.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VolunteerLab\ViewTask.aspx.designer.cs">
+      <DependentUpon>ViewTask.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VolunteerLab\VolunteerProfile.aspx.cs">
+      <DependentUpon>VolunteerProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VolunteerLab\VolunteerProfile.aspx.designer.cs">
+      <DependentUpon>VolunteerProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VolunteerLab\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VolunteerLab\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Lab\css\" />
+    <Folder Include="VolunteerLab\assets\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AdminLab\Home.Master" />
+    <None Include="assets\bootstrap-tree\jsonexample.json" />
+    <None Include="assets\coming_soon\demo\css\fonts\opensans-condlight-webfont.eot" />
+    <None Include="assets\coming_soon\demo\css\fonts\opensans-condlight-webfont.svg" />
+    <None Include="assets\coming_soon\demo\css\fonts\opensans-condlight-webfont.woff" />
+    <None Include="assets\coming_soon\demo\css\fonts\opensans-condlight-webfontd41d.eot" />
+    <None Include="assets\font-awesome\font\fontawesome-webfont.eot" />
+    <None Include="assets\font-awesome\font\fontawesome-webfont.woff" />
+    <None Include="assets\font-awesome\font\fontawesome-webfontd41d.eot" />
+    <None Include="assets\fullcalendar\fullcalendar\fullcalendar.min.js.readme" />
+    <None Include="assets\gritter\images\gritter-light.21.delayed" />
+    <None Include="assets\jquery-slimscroll\jquery-ui-1.9.2.custom.min.js.readme" />
+    <None Include="assets\jqvmap\jqvmap\jquery.vmap.js.readme" />
+    <None Include="assets\jqvmap\jqvmap\maps\jquery.vmap.russia.js.readme" />
+    <None Include="font\myriadprobold.eot" />
+    <None Include="font\myriadprobold.svg" />
+    <None Include="font\myriadprobold.woff" />
+    <None Include="font\myriadproboldd41d.eot" />
+    <None Include="font\myriadproit.eot" />
+    <None Include="font\myriadproit.svg" />
+    <None Include="font\myriadproit.woff" />
+    <None Include="font\myriadproitd41d.eot" />
+    <None Include="font\myriadprolight.eot" />
+    <None Include="font\myriadprolight.svg" />
+    <None Include="font\myriadprolight.woff" />
+    <None Include="font\myriadprolightd41d.eot" />
+    <None Include="font\myriadproregular.eot" />
+    <None Include="font\myriadproregular.svg" />
+    <None Include="font\myriadproregular.woff" />
+    <None Include="font\myriadproregulard41d.eot" />
+    <None Include="img\500.1e.delayed" />
+    <Content Include="VolunteerLab\Volunteer.Master" />
+    <Content Include="Lab\Home.Master" />
+    <Content Include="User\User.Master" />
+    <None Include="Visitor\css\main.less" />
+    <None Include="Visitor\fonts\fontawesome-webfont.eot" />
+    <None Include="Visitor\fonts\fontawesome-webfont.ttf" />
+    <None Include="Visitor\fonts\fontawesome-webfont.woff" />
+    <None Include="Visitor\fonts\FontAwesome.otf" />
+    <None Include="Visitor\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="Visitor\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="Visitor\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="Visitor\sendemail.php" />
+    <Content Include="Visitor\Visitor.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusLib\BusLib.csproj">
+      <Project>{0DA696D6-2F16-42A0-8AA7-0B7ED74E0E10}</Project>
+      <Name>BusLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>10399</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

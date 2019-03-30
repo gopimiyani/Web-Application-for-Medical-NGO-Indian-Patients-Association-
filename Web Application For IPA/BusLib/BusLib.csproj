@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0DA696D6-2F16-42A0-8AA7-0B7ED74E0E10}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BusLib</RootNamespace>
+    <AssemblyName>BusLib</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DataLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DataLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\Alert.cs" />
+    <Compile Include="Common\Common.cs" />
+    <Compile Include="Common\Dashboard.cs" />
+    <Compile Include="Common\EncryptDecryptQueryString.cs" />
+    <Compile Include="Common\Notification.cs" />
+    <Compile Include="Common\PageMast.cs" />
+    <Compile Include="Common\RC4Engine.cs" />
+    <Compile Include="Common\ConfigSession.cs" />
+    <Compile Include="Common\Registration.cs" />
+    <Compile Include="Common\StoreProcedures.cs" />
+    <Compile Include="Master\SuperAdmin.cs" />
+    <Compile Include="Transaction\Event.cs" />
+    <Compile Include="Transaction\News.cs" />
+    <Compile Include="Transaction\Patient.cs" />
+    <Compile Include="Transaction\ServiceDetailReport.cs" />
+    <Compile Include="Transaction\Table.cs" />
+    <Compile Include="Common\UserSession.cs" />
+    <Compile Include="Config\Configuration.cs" />
+    <Compile Include="Config\Permission.cs" />
+    <Compile Include="Config\Permission1.cs" />
+    <Compile Include="Master\Admin.cs" />
+    <Compile Include="Master\AlbumMast.cs" />
+    <Compile Include="Master\CityMast.cs" />
+    <Compile Include="Master\ConfigMast.cs" />
+    <Compile Include="Master\ImageMast.cs" />
+    <Compile Include="Master\IpMast.cs" />
+    <Compile Include="Master\SHMast.cs" />
+    <Compile Include="Master\StateMast.cs" />
+    <Compile Include="Master\TermMast.cs" />
+    <Compile Include="Master\UserMast.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Report.cs" />
+    <Compile Include="Report\ExcelSheetReport.cs" />
+    <Compile Include="Transaction\BloodBankDetail.cs" />
+    <Compile Include="Transaction\DeletedTask.cs" />
+    <Compile Include="Transaction\Donation.cs" />
+    <Compile Include="Transaction\HospitalDetail.cs" />
+    <Compile Include="Transaction\HospitalServiceDetail.cs" />
+    <Compile Include="Transaction\Inquiry.cs" />
+    <Compile Include="Transaction\Login.cs" />
+    <Compile Include="Transaction\Notification.cs" />
+    <Compile Include="Transaction\Payment.cs" />
+    <Compile Include="Transaction\PharmaCompanyDetail.cs" />
+    <Compile Include="Transaction\PharmaCompanyServiceDetail.cs" />
+    <Compile Include="Transaction\Request.cs" />
+    <Compile Include="Transaction\Task.cs" />
+    <Compile Include="Transaction\Visitor.cs" />
+    <Compile Include="Utility\A_ViewUserDetail.cs" />
+    <Compile Include="Utility\CSVReader.cs" />
+    <Compile Include="Utility\UploadMovies.cs" />
+    <Compile Include="Utility\PageMast.cs" />
+    <Compile Include="Utility\Utility.cs" />
+    <Compile Include="Utility\CapchaCode.cs" />
+    <Compile Include="Validation\Validation.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\BusLib.dll" />
+    <Content Include="bin\Debug\BusLib.pdb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

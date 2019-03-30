@@ -1,0 +1,330 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="~/VolunteerLab/Volunteer.Master.cs"
+    Inherits="IPA1.VolunteerLab.Volunteer" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+    <link rel="stylesheet" href="../assets/data-tables/DT_bootstrap.css" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../assets/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" />
+    <link href="../assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="../css/style_responsive.css" rel="stylesheet" />
+    <link href="css/style_default.css" rel="stylesheet" id="style_color" />
+    <link href="../assets/fancybox/source/jquery.fancybox.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="../assets/uniform/css/uniform.default.css" />
+    <link href="../assets/fullcalendar/fullcalendar/bootstrap-fullcalendar.css" rel="stylesheet" />
+    <link href="../assets/jqvmap/jqvmap/jqvmap.css" media="screen" rel="stylesheet" type="text/css" />
+    <title>IPA Volunteer Lab</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="fixed-top">
+ <form id="form1" runat="server">
+         
+    <!-- BEGIN HEADER -->
+    <div id="header" class="navbar navbar-inverse navbar-fixed-top">
+        <!-- BEGIN TOP NAVIGATION BAR -->
+        <div class="navbar-inner">
+            <div class="container-fluid">
+                <!-- BEGIN LOGO -->
+                <a class="brand" href="Dashboard.aspx">
+                    <%-- <img src="../img/logo.png" alt="Admin Lab" />--%>
+                    <div style="font-size: 16pt; color: White;">
+                        <b>Volunteer Lab</b>
+                    </div>
+                </a>
+                <!-- END LOGO -->
+                <!-- BEGIN RESPONSIVE MENU TOGGLER -->
+                <a class="btn btn-navbar collapsed" id="main_menu_trigger" data-toggle="collapse"
+                    data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar">
+                    </span><span class="icon-bar"></span><span class="arrow"></span></a>
+                <!-- END RESPONSIVE MENU TOGGLER -->
+                <div id="top_menu" class="nav notify-row">
+                    <!-- BEGIN NOTIFICATION -->
+                    <ul class="nav top-menu">
+                        <!-- BEGIN SETTINGS -->
+                       <%-- <li class="dropdown"><a class="dropdown-toggle element" data-placement="bottom" data-toggle="tooltip"
+                            href="#" data-original-title="Settings"><i class="icon-cog"></i></a></li>--%>
+                        <!-- END SETTINGS -->
+                        <!-- BEGIN NOTIFICATION DROPDOWN -->
+                        <li class="dropdown" id="header_notification_bar"><a href="#" class="dropdown-toggle"
+                            data-toggle="dropdown"><i class="icon-bell-alt"></i><span class="badge badge-warning">
+                                <asp:Label ID="lblNotificationNumber" runat="server" Text=""></asp:Label>
+                            </span></a>
+                            <ul class="dropdown-menu extended notification">
+                                <li>
+                                    <p>
+                                        You have
+                                        <asp:Label ID="lblNotificationNumber1" runat="server" Text=""></asp:Label>
+                                        new notifications</p>
+                                </li>
+                                <%
+                                    BusLib.Common.Notification objNotification = new BusLib.Common.Notification();
+                                    if (Session["User_ID"] != null)
+                                    {
+                                        objNotification.User_ID1 = Convert.ToInt16( Session["User_ID"].ToString() );
+                                    }
+                                    
+                                    objNotification.GetNotification_Volunteer();
+                                    //   String TotalCount= objNotification.Ds.Tables[0].Rows[0]["TotalCnt"].ToString();
+                                    //  lblNotificationNumber.Text = TotalCount;
+                                    //   lblNotificationNumber1.Text = TotalCount;
+                                    for (int i = 0; i < objNotification.Ds.Tables[1].Rows.Count; i++)
+                                    {
+                                        String Notification = objNotification.Ds.Tables[1].Rows[i]["Notification"].ToString();
+                                        String Count = objNotification.Ds.Tables[1].Rows[i]["Cnt"].ToString();
+                                        //if (Count == "1")
+                                        //{
+                                        //    Count = "";
+                                        //}
+                                        
+                                %>
+                                <li>
+                                    <%  
+                            
+                                        if (Notification == "NewTasks")
+                                        {
+                                            
+                                            //Response.Write("<a href=ViewTask.aspx?Status=Pending>");
+                                            Response.Write("<a href=ViewTask.aspx>");
+                                            Response.Write(Count + " " + "New " + " ");
+                                                Response.Write(" Task has been assigned");
+                                            
+                                          
+                                        }
+
+                                        else if (Notification == "UpdatedTasks")
+                                        {
+                                            Response.Write("<a href=ViewTask.aspx>");
+                                            Response.Write(Count + " ");
+                                                Response.Write(" Task has been updated");
+                                        }                                     
+                                        else
+                                        {
+                                            Response.Write("<a href=#>");
+                                                                                 
+                                        }
+                                        //if (Notification == "NewTasks")
+                                        //{
+                                        //    Response.Write(Count + " " + "New " + " ");
+                                        //    Response.Write(" Task has been assigned");
+                                        //}
+                                        //else if (Notification == "UpdatedTasks")
+                                        //{
+                                        //    Response.Write(Count + " ");
+                                        //    Response.Write(" Task has been updated");
+
+                                        //}
+                                        //else
+                                        //{
+                                        //    Response.Write(Count + " ");
+
+                                        //    Response.Write(" Task has been deleted");
+                                        //}
+                                        Response.Write("</a>");
+                                    %>
+                                </li>
+                                <% } %>
+                            </ul>
+                        </li>
+                        <!-- END NOTIFICATION DROPDOWN -->
+                        <!-- BEGIN ALERT DROPDOWN-->
+                         <li class="dropdown" id="Li1"><a href="#" class="dropdown-toggle"
+                            data-toggle="dropdown"><i class="icon-warning-sign"></i>
+                   <%--     <li class="dropdown"><a class="dropdown-toggle element" data-placement="bottom" data-toggle="tooltip"
+                            href="#" data-original-title="Alerts"><i class="icon-warning-sign"></i>
+                   --%>         <span class="badge badge-warning">
+                            <asp:Label ID="lblAlertNumber" runat="server" Text=""></asp:Label>
+                            </span></a>
+                            <ul class="dropdown-menu extended notification">
+                                <li>
+                                    <p>
+                                        You have
+                                        <asp:Label ID="lblAlertNumber1" runat="server" Text=""></asp:Label>
+                                        new Alerts</p>
+                                </li>
+
+                                
+                              
+                              <%
+                                    BusLib.Common.Alert objAlert = new BusLib.Common.Alert();
+                                    if (Session["User_ID"] != null)
+                                    {
+                                        objAlert.User_ID1 = Convert.ToInt16( Session["User_ID"].ToString() );
+                                    }
+                                    
+                                    objAlert.GetAlert_Volunteer();
+                                    for (int i = 0; i < objAlert.Ds.Tables[1].Rows.Count; i++)
+                                    {
+                                        String Alert= objAlert.Ds.Tables[1].Rows[i]["Alert"].ToString();
+                                        String Count = objAlert.Ds.Tables[1].Rows[i]["Cnt"].ToString();
+                                        //if (Count == "1")
+                                        //{
+                                        //    Count = "";
+                                        //}
+                                        
+                                %>
+                                <li>
+                                    <%  
+                            
+                                        if (Alert == "NearerTasks")
+                                        {
+                                            Response.Write("<a href=ViewTask.aspx?Type=NearerTasks>");
+                                            if (Count == "1" )
+                                            {
+                                                Response.Write(Count + " " + "Task having completion date of tomorrow");
+                                            }
+                                            else
+                                            {
+                                                Response.Write(Count + " " + "Tasks having completion date of tomorrow");
+                                            }
+                                        }
+
+                                        else
+                                        {
+                                            Response.Write("<a href=#>");
+                                        }
+
+                                        Response.Write("</a>");
+                                    %>
+                                </li>
+                                <% } %>
+                                
+                               
+                                </ul>
+
+                            </li>
+                        <!--END ALERT DROPDOWN-->
+                    </ul>
+                </div>
+                <!-- END  NOTIFICATION -->
+                <div class="top-nav ">
+                    <ul class="nav pull-right top-menu">
+                        <!-- BEGIN SUPPORT -->
+                     <%--   <li class="dropdown mtop5"><a class="dropdown-toggle element" data-placement="bottom"
+                            data-toggle="tooltip" href="#" data-original-title="Help"><i class="icon-headphones">
+                            </i></a></li>--%>
+                        <!-- END SUPPORT -->
+                        <!-- BEGIN USER LOGIN DROPDOWN -->
+                        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <%--    <img src="../img/avatar1_small.jpg" alt="">--%>
+                            <asp:Image ID="ProfilePic" runat="server" Height="30px" Width="35px" alt="" />
+                            
+                             <span class="username">
+                                <asp:Label ID="lblUsername" runat="server" Text=""></asp:Label>
+                            </span><b class="caret"></b></a>
+                            
+                            <ul class="dropdown-menu">
+                                <li><a href="VolunteerProfile.aspx"><i class="icon-user"></i>My Profile</a></li>
+                              
+                                <li class="divider"></li>
+                                <li>
+                                    <asp:LinkButton ID="lbLogOut" runat="server" onclick="lbLogOut_Click">
+                                <i class="icon-key"></i>
+                                Log Out
+                               </asp:LinkButton>   
+                               
+                                </li>
+                            </ul>
+
+                        </li>
+                        <!-- END USER LOGIN DROPDOWN -->
+                    </ul>
+                    <!-- END TOP NAVIGATION MENU -->
+                </div>
+            </div>
+        </div>
+        <!-- END TOP NAVIGATION BAR -->
+    </div>
+    <!-- END HEADER -->
+    <!-- BEGIN CONTAINER -->
+    <div id="container" class="row-fluid">
+        <!-- BEGIN SIDEBAR -->
+        <div id="sidebar" class="nav-collapse collapse">
+            <!-- BEGIN SIDEBAR TOGGLER BUTTON -->
+            <div class="sidebar-toggler hidden-phone">
+            </div>
+            <!-- BEGIN SIDEBAR TOGGLER BUTTON -->
+         
+            <!-- BEGIN SIDEBAR MENU -->
+            <ul class="sidebar-menu">
+                <li class="has-sub active"><a href="Dashboard.aspx" class=""><span class="icon-box">
+                    <i class="icon-dashboard"></i></span>Dashboard </a></li>
+           <li class="has-sub"><a href="ViewTask.aspx" class=""><span class="icon-box"><i class="icon-tasks">
+                </i></span>Task</a> </li>
+                <li class="has-sub"><a href="../Visitor/Home.aspx" class=""><span class="icon-box">
+                    <i class="icon-home"></i></span>Home </a></li>
+            </ul>
+            <!-- END SIDEBAR MENU -->
+        </div>
+        <!-- END SIDEBAR -->
+        <!-- BEGIN PAGE -->
+        <div id="main-content">
+          
+            <!-- BEGIN PAGE CONTAINER-->
+            <div>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <!-- END PAGE CONTENT-->
+            <%--			</div>
+			<!-- END PAGE CONTAINER-->
+		</div>
+		<!-- END PAGE --> --%>
+        </div>
+        <!-- END CONTAINER -->
+    </div>
+    <!-- BEGIN FOOTER -->
+    <div id="footer">
+           Copyright &copy; IPA | Developed By SCETIAN-GJRE
+        <div class="span pull-right" style="width:2.5%">
+            <span class="go-top"><i class="icon-arrow-up"></i></span>
+        </div>
+    </div>
+    <!-- END FOOTER -->
+    <!-- BEGIN JAVASCRIPTS -->
+    <!-- Load javascripts at bottom, this will reduce page load time -->
+    <script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="../assets/jquery-slimscroll/jquery-ui-1.9.2.custom.min.js"></script>
+    <script type="text/javascript" src="../assets/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+    <script type="text/javascript" src="../assets/fullcalendar/fullcalendar/fullcalendar.min.js"></script>
+    <script type="text/javascript" src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.blockui.js"></script>
+    <script type="text/javascript" src="../js/jquery.cookie.js"></script>
+    <!-- ie8 fixes -->
+    <!--[if lt IE 9]>
+	<script src="js/excanvas.js"></script>
+	<script src="js/respond.js"></script>
+	<![endif]-->
+    <script src="../assets/jqvmap/jqvmap/jquery.vmap.js" type="text/javascript"></script>
+    <script src="../assets/jqvmap/jqvmap/maps/jquery.vmap.russia.js" type="text/javascript"></script>
+    <script src="../assets/jqvmap/jqvmap/maps/jquery.vmap.world.js" type="text/javascript"></script>
+    <script src="../assets/jqvmap/jqvmap/maps/jquery.vmap.europe.js" type="text/javascript"></script>
+    <script src="../assets/jqvmap/jqvmap/maps/jquery.vmap.germany.js" type="text/javascript"></script>
+    <script src="../assets/jqvmap/jqvmap/maps/jquery.vmap.usa.js" type="text/javascript"></script>
+    <script src="../assets/jqvmap/jqvmap/data/jquery.vmap.sampledata.js" type="text/javascript"></script>
+    <script src="../assets/jquery-knob/js/jquery.knob.js" type="text/javascript"></script>
+    <script src="../assets/flot/jquery.flot.js" type="text/javascript"></script>
+    <script src="../assets/flot/jquery.flot.resize.js" type="text/javascript"></script>
+    <script src="../assets/flot/jquery.flot.pie.js" type="text/javascript"></script>
+    <script src="../assets/flot/jquery.flot.stack.js" type="text/javascript"></script>
+    <script src="../assets/flot/jquery.flot.crosshair.js" type="text/javascript"></script>
+    <script src="../js/jquery.peity.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="../assets/uniform/jquery.uniform.min.js" type="text/javascript"></script>
+    <script src="../js/scripts.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function () {
+            // initiate layout and plugins
+            App.setMainPage(true);
+            App.init();
+        });
+    </script>
+    <!-- END JAVASCRIPTS -->
+    </form>
+</body>
+</html>
